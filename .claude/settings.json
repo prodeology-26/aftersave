@@ -5,7 +5,8 @@
       "mcp__prodeology__ask",
       "mcp__prodeology__get_context",
       "mcp__prodeology__log_progress",
-      "mcp__prodeology__report_completion"
+      "mcp__prodeology__report_completion",
+      "mcp__prodeology__resolve_decision"
     ]
   },
   "hooks": {
