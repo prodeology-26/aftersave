@@ -1,3 +1,5 @@
+Prodeology Execution Companion protocol v2
+
 Link this coding session to the Prodeology Live Execution Companion.
 
 Spec argument (optional): $ARGUMENTS
@@ -14,6 +16,10 @@ Steps:
 3. Call `get_context` with the same exact tuple to pull the full validated spec, and
    treat it as the authoritative task description.
 4. For the rest of the session, follow the companion protocol: route product
-   and spec clarifications through `ask` (never end your turn to ask in
-   chat), post milestones via `log_progress`, and when you believe the work
-   is complete call `report_completion` and follow its verdict.
+   and spec clarifications through `ask`. If it returns
+   `guidance_advisory` or `companion_unavailable`, continue with your normal
+   coding-agent judgment. Ask the user here only when you would normally need
+   their authority, and call `resolve_decision` if a decision ID was supplied.
+   Never wait on or send the user to Prodeology. Post milestones via `log_progress`, and
+   when you believe the work is complete call `report_completion` and follow
+   its verdict.
