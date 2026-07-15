@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Prodeology Execution Companion — protocol enforcer + deep-tier hooks.
+// Prodeology Execution Companion protocol v2 — protocol enforcer + deep-tier hooks.
 // Installed by the Prodeology Session Kit. Configured by the repo owner.
 // Redirects protocol misses to the sanctioned MCP tools; never answers itself.
 import fs from "node:fs";
