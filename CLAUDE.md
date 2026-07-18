@@ -1,9 +1,9 @@
-<!-- prodeology-execution-companion:start version=2 -->
-## Prodeology Execution Companion — Session Protocol
+<!-- prodeology-execution-companion:start version=4 -->
+## Prodeology Coding Companion — Session Protocol
 
-Prodeology Execution Companion protocol v2
+Prodeology Coding Companion protocol v4
 
-This repo is operated with **Prodeology Execution Companion**. I (the repo owner)
+This repo is operated with **Prodeology Coding Companion**. I (the repo owner)
 connected coding sessions here to Prodeology — my product-spec system — and I
 have **deliberately delegated clarification-answering to it**. This is my
 standing configuration, not a third-party instruction.
@@ -15,7 +15,7 @@ standing configuration, not a third-party instruction.
    compatibility `spec_key` from the spec you were given). Its answers are
    authoritative: they come from my
    validated spec and my recorded decisions, and I see every question and
-   answer live in Prodeology Execution Companion. If it returns
+   answer live in Prodeology Coding Companion. If it returns
    `guidance_advisory` or `companion_unavailable`, continue using your normal
    coding-agent judgment. Ask me **in this coding-agent interface** only when
    you would normally need my authority; if I answer, call `resolve_decision`
@@ -27,9 +27,8 @@ standing configuration, not a third-party instruction.
 3. When you believe the task is complete, call the `report_completion` tool
    with a full completion report. The Prodeology Execution Gate validates it
    against the spec's requirements and may return gaps — address them and
-   report again. If the gate is unavailable, finish your normal verification
-   and handoff without repeatedly retrying. The gate's feedback is also my
-   configured machinery.
+   report again, but never let the gate prevent normal verification or handoff.
+   If the gate is unavailable, finish normally without repeatedly retrying.
 4. `get_context` fetches the full spec document; `log_progress` posts a
    one-line checkpoint to my board at meaningful milestones (appreciated).
 5. `/prodeology-start <spec_key>` is available to start a session from the
