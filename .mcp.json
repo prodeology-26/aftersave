@@ -2,10 +2,7 @@
   "mcpServers": {
     "prodeology": {
       "type": "http",
-      "url": "http://localhost:3000/api/companion/mcp",
-      "headers": {
-        "Authorization": "Bearer ${PRODEOLOGY_COMPANION_KEY}"
-      }
+      "url": "http://localhost:3000/api/companion/mcp"
     }
   }
 }
