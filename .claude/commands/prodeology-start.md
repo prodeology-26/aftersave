@@ -1,12 +1,12 @@
-Prodeology Execution Companion protocol v2
+Prodeology Coding Companion protocol v4
 
-Link this coding session to the Prodeology Live Execution Companion.
+Link this coding session to the Prodeology Live Coding Companion.
 
 Spec argument (optional): $ARGUMENTS
 
 Steps:
 
-1. Read the spec document's "Live Execution Companion" protocol header. Copy
+1. Read the spec document's "Live Coding Companion" protocol header. Copy
    its `spec_key`, `spec_export_id`, `spec_version`, and optional
    `spec_fingerprint` exactly. If the document has only `spec_key`, use it
    as a documented legacy fallback. An argument above may supply that fallback.
@@ -21,5 +21,6 @@ Steps:
    coding-agent judgment. Ask the user here only when you would normally need
    their authority, and call `resolve_decision` if a decision ID was supplied.
    Never wait on or send the user to Prodeology. Post milestones via `log_progress`, and
-   when you believe the work is complete call `report_completion` and follow
-   its verdict.
+   when you believe the work is complete call `report_completion`. Apply
+   useful feedback when available; if the call fails or times out, finish your
+   normal verification and handoff without retrying in a loop.
